@@ -1,13 +1,15 @@
 import { Router } from "express";
-import { queryCars } from "../middlewares/cars-middleware.js";
+import { getAllCars, getMoreModels, getFewerModels, getOrdenedList, getUnordenedList, getBrandCarsList} from "../middlewares/cars-middleware.js";
+
 
 export const routers = Router();
 
-routers.get('/', queryCars)
-
-
-
-
+routers.get('/', getAllCars)
+routers.get('/maisModelos', getMoreModels)
+routers.get('/menosModelos', getFewerModels)
+routers.get('/listaMaisModelos/:X', getOrdenedList)
+routers.get('/listaMenosModelos/:X', getUnordenedList)
+routers.get('/listaModelos/:marca', getBrandCarsList)
 
 
 
