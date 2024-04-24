@@ -9,7 +9,7 @@ routers.get('/maisModelos', getMoreModels)
 routers.get('/menosModelos', getFewerModels)
 routers.get('/listaMaisModelos/:X', getOrdenedList)
 routers.get('/listaMenosModelos/:X', getUnordenedList)
-routers.get('/listaModelos/:marca', getBrandCarsList)
+routers.post('/listaModelos', getBrandCarsList)
 
 
 

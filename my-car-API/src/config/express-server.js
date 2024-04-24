@@ -5,7 +5,7 @@ export const PORT_ENV = process.env | 3399;
 export const server = express();
 
 server.use(express.json());
-server.use(routers);
+server.use('/marcas', routers);
 
 
 

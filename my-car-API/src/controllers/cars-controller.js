@@ -98,7 +98,7 @@ export async function listUntilUnorderCars(X) {
 export async function listBrandCars(marca) {
   try {
     const brandList = await getData();
-    console.log(marca)
+
     const filterBrand = brandList.map((item) => {
       if (
         item.brand.toUpperCase() === marca.toUpperCase() ||
@@ -109,7 +109,6 @@ export async function listBrandCars(marca) {
         return item.models;
       }
     });
-    console.log(filterBrand)
     const filterModels = [];
 
     for (let index = 0; index < filterBrand.length; index++) {
@@ -119,7 +118,6 @@ export async function listBrandCars(marca) {
         filterModels.push(filterBrand[index]);
       }
     }
-    console.log(filterModels)
     return filterModels;
   } catch (error) {
     return error;

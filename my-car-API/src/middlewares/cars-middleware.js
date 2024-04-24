@@ -28,7 +28,7 @@ async function sendListOrder(req, controller, res) {
 
 async function sendBrandCar(req, controller, res) {
   try {
-    const { marca } = req.params;
+    const { marca } = req.body;
     const brandList = JSON.stringify(await controller(marca));
     res.send(brandList);
   } catch (error) {
