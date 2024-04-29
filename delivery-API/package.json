@@ -1,0 +1,16 @@
+{
+  "name": "delivery-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gleison <gleison.nsilva@hotmail.com> (Sensui)",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "winston": "^3.13.0"
+  }
+}
